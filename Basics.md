@@ -295,3 +295,23 @@
 - Side Effect: It is the effect of the function that is not related to the return value. **eg: print(), etc.**
 - In python, the print() function is used to print the output on the screen it takes the input as a string and prints it on the screen.
 - Here, the print() function has the side effect of printing the output on the screen.
+
+### Note : Parenthesis is not mandatory while using if, elif, else, for, while, etc. but it is recommended to use the parenthesis when required to make the code more readable.
+
+## What is flowchart?
+- Flowchart: It is the diagram that represents the flow of the program. **eg: start, input, process, decision, loop, output, end, etc.**
+- We use : 
+- Oval to represent the start and end of the program. 
+- Parallelogram to represent the input and output of the program.
+- Rectangle to represent the process of the program.
+- Diamond to represent the decision of the program.
+- etc.
+
+### Note: The code is pythonic means the code is written in the pythonic way.
+
+## What is match-case statement?
+- Match-Case Statement: It is the statement that is used to match the value with the case and execute the block of code. **eg: match value: case 1: print("One") case 2: print("Two") case 3: print("Three") etc.**
+- In python, the match-case statement is used to match the value with the case and execute the block of code.
+- Here, the match-case statement is used to match the value with the case and execute the block of code.
+- In python, the match-case statement is used to replace the switch-case statement.
+
