@@ -315,3 +315,50 @@
 - Here, the match-case statement is used to match the value with the case and execute the block of code.
 - In python, the match-case statement is used to replace the switch-case statement.
 
+## What is Magic Number?
+- Magic Number: It is the number that is used in the code without any explanation. **eg: 10, 20, 30, etc.**
+- In python, the magic number is used in the code without any explanation.
+
+## What is Infinite Loop?
+- Infinite Loop: It is the loop that runs indefinitely. **eg: while True: print("Hello")**
+
+### Note : It's a convention to start counting from 0 in programming.
+### Note : Python does not have a++ and a-- operators.
+### Note : For - loop is used to iterate over the sequence of the elements.i.e list, tuple, set, dictionary, etc.
+### Note : range() function is used to generate the sequence of the numbers.
+
+## What is String concatenation and String replication?
+- String Concatenation: It is the process of combining the strings. **eg: "Hello" + "World"**
+- String Replication: It is the process of repeating the strings. **eg: "Hello" * 3**
+
+## What is try-except block?
+- Try-Except Block: It is the block that is used to handle the exceptions. **eg: try: except:**
+
+### Note : It's the bad practice to use the except block catching all type of errors without the exception name, we should know the error the user might face and handle it accordingly.
+### Note : It's a good practice that only a one or very few line should be in the try-block, that can actually raise the exception.
+
+## What is syntactic sugar?
+- Syntactic Sugar: It is the syntax that makes the code easier to read and write. **eg: list comprehension, dictionary comprehension, etc.**
+
+## Explain try,except,else and finally block?
+- Try Block: It is the block that is used to execute the block of code that can raise the exception. **eg: try:**
+- Except Block: It is the block that is used to execute the block of code when the try block raises the exception. **eg: except:**
+- Else Block: It is the block that is used to execute the block of code when the try block does not raise any exception. **eg: else:**
+- Finally Block: It is the block that is used to execute the block of code whether the try block raises the exception or not. **eg: finally:**
+
+## Scope in Different Programming Languages
+### C and C++
+- Block-scoped: Variables declared inside a block (within curly braces `{}`) have scope limited to that block.
+### Java
+- Block-scoped: Similar to C and C++, variables declared inside a block have scope limited to that block.
+- Class-level scope: Variables declared at the class level (outside any method) are accessible throughout the class.
+### Python
+- Function-scoped: Variables declared inside a function have scope limited to that function.
+- Module-level scope: Variables declared at the top level of a module are accessible throughout the module.
+- Class-scoped: Variables inside a class are generally accessible within methods and class bodies.
+### JavaScript
+- Function-scoped: Variables declared inside a function have scope limited to that function.
+- Block-scoped (with `let` and `const` in modern JavaScript): Variables declared using `let` and `const` have block-level scope.
+### C# and .NET Languages
+- Block-scoped: Similar to C and C++, variables declared inside a block have scope limited to that block.
+- Class-level scope: Variables declared at the class level are accessible throughout the class.
