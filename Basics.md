@@ -362,3 +362,106 @@
 ### C# and .NET Languages
 - Block-scoped: Similar to C and C++, variables declared inside a block have scope limited to that block.
 - Class-level scope: Variables declared at the class level are accessible throughout the class.
+
+
+## What is module and package?
+- Module: It is the file that contains the python code. **eg: module.py**
+- Package: It is the directory that contains the python code. **eg: package/**
+
+## What is Library and Framework?
+- Library: It is the collection of the modules and packages. **eg: numpy, pandas, matplotlib, etc.**
+- Framework: It is the collection of the libraries and packages. **eg: Django, Flask, etc.**
+
+## What is iterable and iterator?
+- Iterable: It is the object that can be iterated. **eg: list, tuple, set, dictionary, etc.**
+- Iterator: It is the object that can be iterated using the next() method. **eg: iter(), next(), etc.**
+
+## what is Sequence and Collection?
+- Sequence: It is the ordered collection of the elements. **eg: list, tuple, string, etc.**
+- Collection: It is the unordered collection of the elements. **eg: set, dictionary, etc.**
+
+### Note: All about import statement -
+- Import Statement: It is the statement that is used to import the module or package. **eg: import module, import package, from module import function, from package import module, etc.**
+- Different ways to import the module or package:
+  - import module
+  - import module as alias
+  - from module import function
+  - from module import function as alias
+  - from module import *
+  - from module import function1, function2, function3, etc.
+  - from package import module
+  - from package import module as alias
+  - from package import module1, module2, module3, etc.
+  - from package import *
+  - etc.
+
+### Note: Alias- It is the alternative name of the module or package.
+
+## What is command line argument?
+- Command Line Argument: It is the argument that is passed to the program when it is executed. **eg: python3 <file_name.py> arg1 arg2 arg3**
+- In python, sys.argv is used to get the command line arguments using the "sys" module.
+
+### Note: Python Style Guide - PEP 8:
+- PEP 8: It is the style guide for the python code. **eg: indentation, line length, blank lines, comments, naming conventions, etc.**
+- Link: https://www.python.org/dev/peps/pep-0008/
+- According to PEP 8:
+- The maximum line length should be 79 characters.
+- The indentation should be 4 spaces.
+- The blank lines should be used to separate the blocks of code.
+- The comments should be used to explain the code.
+- The naming conventions should be used to define the variable, function, class, etc.
+   - snake_case for variable and function names.
+   - PascalCase for class names.
+   - UPPERCASE for constants.
+   - etc.
+
+## What is slicing?
+- Slicing: It is the process of extracting the elements from the sequence. **eg: list[1:3], tuple[1:3], string[1:3], etc.**
+- The slicing is inclusive of the start index and exclusive of the end index.
+
+### PyPI - The Python Package Index: 
+- PyPI: It is the repository of the software for the Python programming language. **eg: pip, etc.**
+- Link: https://pypi.org/
+- We can use the pip command to install the package from the PyPI.
+
+## What is API?
+- API: It is the application programming interface that is used to interact with the software. **eg: REST API, etc.**
+
+## What is request Library?
+- Request Library: It is the library that is used to send the HTTP requests. **eg: get(), post(), put(), delete(), etc.**
+- Link: https://PyPI.org/project/requests/
+
+### Note: The Zen of Python: (means, the principles of python)
+- Readability counts.
+- There should be one-- and preferably only one --obvious way to do it.
+- Explicit is better than implicit.
+- Simple is better than complex.
+- Complex is better than complicated.
+- Flat is better than nested.
+- Sparse is better than dense.
+- Now is better than never.
+- Although never is often better than *right* now.
+- If the implementation is hard to explain, it's a bad idea.
+- If the implementation is easy to explain, it may be a good idea.
+- Namespaces are one honking great idea -- let's do more of those!
+- More about python slogans: https://www.python.org/dev/peps/pep-0020/
+
+## What is pylint?
+- Pylint: It is the tool that is used to check the quality of the python code. **eg: pylint <file_name.py>**
+- Link: https://PyPI.org/project/pylint/
+
+## What is pycodestyle?
+- Pycodestyle: It is the tool that is used to check the style of the python code. **eg: pycodestyle <file_name.py>**
+- Link: https://PyPI.org/project/pycodestyle/
+
+## What is black?
+- Black: It is the tool that is used to format the python code. **eg: black <file_name.py>**
+- Link: https://PyPI.org/project/black/
+
+## What is mypy?
+- Mypy: It is the tool that is used to check the type of the python code. **eg: mypy <file_name.py>**
+- Link: https://PyPI.org/project/mypy/
+
+### Note : Trailing comma is used to define the single element tuple, list, set, dictionary, etc also it is used to define the multiple elements in the tuple, list, set, dictionary, etc.
+- eg: (10,), [10,], {10,}, {10: 20,}, etc.
+- eg: (10, 20, 30,), [10, 20, 30,], {10, 20, 30,}, {10: 20, 30: 40,}, etc.
