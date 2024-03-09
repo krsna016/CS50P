@@ -465,3 +465,21 @@
 ### Note : Trailing comma is used to define the single element tuple, list, set, dictionary, etc also it is used to define the multiple elements in the tuple, list, set, dictionary, etc.
 - eg: (10,), [10,], {10,}, {10: 20,}, etc.
 - eg: (10, 20, 30,), [10, 20, 30,], {10, 20, 30,}, {10: 20, 30: 40,}, etc.
+
+## What is boylerplate code?
+- Boilerplate Code: It is the code that is used in many places with little or no alteration. **eg: import os, import sys, etc.**
+- In python, the import statement is used to import the module or package.
+
+## What is "Assert" keyword?
+- Assert Keyword: It is the keyword that is used to check the condition. **eg: assert condition, etc.**
+- eg: assert a > 10, "a should be greater than 10" means if a is not greater than 10 then it will raise the AssertionError with the message "a should be greater than 10".
+
+## What is unit testing?
+- Unit Testing: It is the process of testing the individual unit of the code. **eg: unittest, pytest, etc.**
+- In python, the unittest module is used to perform the unit testing.
+- In python, the pytest module is used to perform the unit testing.
+- Link: https://docs.python.org/3/library/unittest.html
+- Link: https://docs.pytest.org/en/stable/
+
+
+### Note : We use __init__.py file to define the package in python.
