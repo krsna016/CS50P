@@ -12,7 +12,6 @@ def is_valid(s):
         flag = False
     elif not s.isalnum():
         flag = False
-    # Checking First two chars must be Letter
     elif not s[:2].isalpha():
         flag = False
     elif s[0].isdigit():
