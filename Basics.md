@@ -483,3 +483,41 @@
 
 
 ### Note : We use __init__.py file to define the package in python.
+
+### Note: File I/0 in python:
+- File I/O: It is the process of reading and writing the data from and to the file.
+- In python, we can use the open() function to open the file. eg: open("file_name.txt", "r")
+- In python, we can use the close() method to close the file. eg: file.close()
+- In python, we can use the read() method to read the data from the file. eg: file.read()
+- In python, we can use the write() method to write the data to the file. eg: file.write("Hello")
+- In python, we can use the readline() method to read the line from the file. eg: file.readline()
+- In python, we can use the readlines() method to read the lines from the file. eg: file.readlines()
+- In python, we can use the seek() method to change the position of the file. eg: file.seek(0)
+- In python, we can use the tell() method to get the position of the file. eg: file.tell()
+- In python, we can use the with statement to open the file. eg: with open("file_name.txt", "r") as file:
+- In python, we can use the read mode to read the file. eg: "r"
+- In python, we can use the write mode to write the file. eg: "w"
+- In python, we can use the append mode to append the file. eg: "a"
+- In python, we can use the binary mode to read and write the binary file. eg: "rb", "wb", etc.
+- In python, we can use the text mode to read and write the text file. eg: "rt", "wt", etc.
+- In python, we can use the read and write mode to read and write the file. eg: "r+", "w+", etc.
+- In python, we can use the binary and text mode to read and write the binary and text file. eg: "rb+", "wb+", "rt+", "wt+", etc.
+- In python, we can use the os module to perform the file I/O operations. eg: os.open(), os.close(), os.read(), os.write(), etc.
+- In python, we can use the shutil module to perform the file I/O operations. eg: shutil.copy(), shutil.move(), etc.
+- In python, we can use the pathlib module to perform the file I/O operations. eg: Path.open(), Path.read_text(), Path.write_text(), etc.
+- In python, we can use the pickle module to perform the file I/O operations. eg: pickle.dump(), pickle.load(), etc.
+- In python, we can use the json module to perform the file I/O operations. eg: json.dump(), json.load(), etc.
+- In python, we can use the csv module to perform the file I/O operations. eg: csv.reader(), csv.writer(), etc.
+- etc.
+
+### Note: Types of files:
+- Text Files: It is the files that are used to store the text data. **eg: .txt, etc.**
+- Binary Files: It is the files that are used to store the binary data. **eg: .jpg, .png, .pdf, etc.**
+- csv Files: It is the files that are used to store the comma separated values. **eg: .csv, etc.**
+- json Files: It is the files that are used to store the json data. **eg: .json, etc.**
+- etc.
+
+### Note: If we use double quotes inside the single quotes and single quotes inside the double quotes then we don't need to use the escape sequences.
+- we should use the escape sequences when we use the same quotes inside the same quotes.
+- eg: "Hello 'World'", 'Hello "World"'
+- eg: 'Hello \'World\'', "Hello \"World\""
