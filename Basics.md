@@ -521,3 +521,165 @@
 - we should use the escape sequences when we use the same quotes inside the same quotes.
 - eg: "Hello 'World'", 'Hello "World"'
 - eg: 'Hello \'World\'', "Hello \"World\""
+
+
+## What is regex?
+- Regex: It is the sequence of characters that define the search pattern. **eg: re, etc.**
+- It is also known as regular expression.
+- In python, the re module is used to perform the regex operations.
+- Link: https://docs.python.org/3/library/re.html
+
+
+### Note: Regex using re module:
+- "re" module is used to perform the regex operations.
+- Here are some of the methods of the "re" module:
+  - re.match(): It is used to match the pattern at the beginning of the string.
+  - re.fullmatch(): It is used to match the pattern with the whole string.
+  - re.search(): It is used to search the pattern in the string.
+  - re.findall(): It is used to find all the occurrences of the pattern in the string.
+  - re.finditer(): It is used to find all the occurrences of the pattern in the string and return the iterator.
+  - re.sub(): It is used to substitute the pattern in the string.
+  - re.split(): It is used to split the string based on the pattern.
+  - Some PlaceHolders includes : 
+    - "$" - Matches the end of the line.
+    - "^" - Matches the start of the line.
+    - "." - Matches any character except the newline character.
+    - "*" - Matches the zero or more occurrences of the pattern.
+    - "+" - Matches the one or more occurrences of the pattern.
+    - "?" - Matches the zero or one occurrences of the pattern.
+    - "|" - Matches the either or pattern.
+    - "[]" - Matches the set of characters.
+    - "()" - Matches the group of characters.
+    - "{n}" - Matches the exactly n occurrences of the pattern.
+    - "{n,}" - Matches the n or more occurrences of the pattern.
+    - "{n,m}" - Matches the n to m occurrences of the pattern.
+    - "\d" - Matches the digit character.
+    - "\D" - Matches the non-digit character.
+    - "\s" - Matches the whitespace character.
+    - "\S" - Matches the non-whitespace character.
+    - "\w" - Matches the word character.
+    - "\W" - Matches the non-word character.
+    - "\b" - Matches the empty string at the beginning or end of the word.
+    - "\B" - Matches the empty string not at the beginning or end of the word.
+    - Link: https://docs.python.org/3/library/re.html - More about re module.
+
+### Note :
+- 1) .+@.+   : Read as "Any character one or more times followed by @ symbol followed by any character one or more times"
+
+- 2) ..* @.. * : Read as "Any character followed by any character zero or more times followed by @ symbol followed by any 
+             character followed by any character zero or more times"
+
+- 3) r".+@.+\.edu"  : Read as "Any character one or more times followed by @ symbol followed by any character one or more
+                    times followed by a dot followed by edu"
+                    
+- 4) r"^.+@.+\.edu$" : Read as "Start of the string followed by any character one or more times followed by @ symbol 
+                     followed by any character one or more times followed by a dot followed by edu followed by 
+                     end of the string"
+
+- 5) r"^[abcd]+@.+\.edu$" : Read as "Start of the string followed by a, b, c or d one or more times followed by @ symbol
+                          followed by any character one or more times followed by a dot followed by edu followed by
+                          end of the string"
+                          
+- 6) r"^[^@]+.+\.edu$" : Read as "Start of the string followed by any character except @ one or more times followed by
+                       any character one or more times followed by a dot followed by edu followed by end of the string"
+
+- 7) r"^[a-z]+@[a-z]+\.edu$" : Read as "Start of the string followed by a to z one or more times followed by @ symbol
+                             followed by a to z one or more times followed by a dot followed by edu followed by  
+                             end of the string"
+                             
+- 8) r"^[a-zA-Z]+@[a-zA-Z]+\.edu$" : Read as "Start of the string followed by a to z or A to Z one or more times followed
+                                   by @ symbol followed by a to z or A to Z one or more times followed by a dot   
+                                   followed by edu followed by end of the string"
+                                   
+- 9) r"^[a-zA-Z0-9_]+@[a-zA-Z0-9_]+\.edu$" : Read as "Start of the string followed by a to z or A to Z or 0 to 9 or _
+                                           one or more times followed by @ symbol followed by a to z or A to Z or 0 to 9 
+                                           or _ one or more times followed by a dot followed by edu followed by end of 
+                                           the string"
+                                        
+- 10) r"^\w+@\w+\.edu$" : Read as "Start of the string followed by a to z or A to Z or 0 to 9 or _ one or more times
+                        followed by @ symbol followed by a to z or A to Z or 0 to 9 or _ one or more times followed
+                        by a dot followed by edu followed by end of the string"
+
+- 11) r"^\w+@\w+\.(com|edu|in)$" : Read as "Start of the string followed by a to z or A to Z or 0 to 9 or _ one or more
+                                 times followed by @ symbol followed by a to z or A to Z or 0 to 9 or _ one or more
+                                 times followed by a dot followed by com or edu or in followed by end of the string"
+                   
+**---- If we want space---------------------**                                 
+- 12) r"^[a-zA-Z0-9_ ]+@[a-zA-Z0-9_ ]+\.edu$ : Read as "Start of the string followed by a to z or A to Z or 0 to 9 or _
+                                             or space one or more times followed by @ symbol followed by a to z or A to 
+                                             Z or 0 to 9 or _ or space one or more times followed by a dot followed by
+                                             edu followed by end of the string"
+                                        
+- 13) r"^(\w|\s)+@(\w|\s)+\.edu$" : Read as "Start of the string followed by a to z or A to Z or 0 to 9 or _ or space one
+                                 or more times followed by @ symbol followed by a to z or A to Z or 0 to 9 or _ or 
+                                 space one or more times followed by a dot followed by edu followed by end of the 
+                                 string"
+
+**-------------------------------------------**
+                                 
+- 14) r"^\w+@\w+\.\w+\.edu$" : Read as "Start of the string followed by a to z or A to Z or 0 to 9 or _ one or more
+                             times followed by @ symbol followed by a to z or A to Z or 0 to 9 or _ one or more times
+                             followed by a dot followed by a to z or A to Z or 0 to 9 or _ one or more times followed
+                             by a dot followed by edu followed by end of the string"
+                             
+- 15) r"^\w+@(\w+\.)?\w+\.edu$" : Read as "Start of the string followed by a to z or A to Z or 0 to 9 or _ one or more 
+                                times followed by @ symbol followed by (a to z or A to Z or 0 to 9 or _ one or more times
+                                followed by a dot) - zero or one time followed by a to z or A to Z or 0 to 9 or _ one or
+                                more times followed by a dot followed by edu followed by end of the string"    
+                                
+- 16) r"^(\w|\.)+@(\w+\.)?\w+\.edu$" : Read as "Start of the string followed by a to z or A to Z or 0 to 9 or _ or . one
+                                    or more times followed by @ symbol followed by (a to z or A to Z or 0 to 9 or _ one
+                                    or more times followed by a dot) - zero or one time followed by a to z or A to Z or 0
+                                    to 9 or _ one or more times followed by a dot followed by edu followed by end of the
+                                    string"
+
+**also,**
+
+- 16) r"^[a-zA-Z0-9_\.]+@(\w+\.)?\w+\.edu$" : Read as "Start of the string followed by a to z or A to Z or 0 to 9 or _ or . 
+                                            one or more times followed by @ symbol followed by (a to z or A to Z or 0 to
+                                            9 or _ one or more times followed by a dot) - zero or one time followed by a
+                                            to z or A to Z or 0 to 9 or _ one or more times followed by a dot followed by
+                                            edu followed by end of the string"  
+
+### Note : \w is a shorthand character class and is equivalent to [a-zA-Z0-9_]
+### Note : \d is a shorthand character class and is equivalent to [0-9]
+### Note : \s is a shorthand character class and is equivalent to [\t\n\r\f\v]
+### Note : \W is a shorthand character class and is equivalent to [^a-zA-Z0-9_]
+### Note : \D is a shorthand character class and is equivalent to [^0-9]
+### Note : \S is a shorthand character class and is equivalent to [^\t\n\r\f\v]
+
+## What are FLAGS in regex?
+- Flags: It is the special options that are used to modify the regex pattern. **eg: re.IGNORECASE, re.MULTILINE, re.DOTALL, etc.**
+- re.IGNORECASE: It is used to ignore the case of the pattern.
+- re.MULTILINE: It is used to match the pattern at the beginning of the line.
+- re.DOTALL: It is used to match the pattern with the newline character.
+
+
+### Note :
+- Grouping:
+    - (abc) : Matches the string "abc"
+    - (a|b) : Matches either "a" or "b"
+    - (?:abc) : Non-capturing group
+    - (?P<name>abc) : Named capturing group
+    - \1 : Matches the same text as most recently matched by the 1st capturing group
+    - \2 : Matches the same text as most recently matched by the 2nd capturing group
+    - \3 : Matches the same text as most recently matched by the 3rd capturing group
+    - \A : Matches the start of the string
+    - \Z : Matches the end of the string
+    - \b : Matches the empty string at the beginning or end of a word
+    - \B : Matches the empty string not at the beginning or end of a word
+    - \d : Matches any decimal digit
+    - \D : Matches any non-digit character
+    - \s : Matches any whitespace character
+    - \S : Matches any non-whitespace character
+    - \w : Matches any alphanumeric character
+    - \W : Matches any non-alphanumeric character
+    - \t : Matches the tab character
+    - \n : Matches the newline character
+    - \r : Matches the carriage return character
+    - \f : Matches the form feed character
+    - \v : Matches the vertical tab character
+    - (...) : Matches whatever regular expression is inside the parentheses, and indicates the start and end of a group
+    - (?:...) : A non-capturing version of regular parentheses
+
+### Note: Walrus Operator :=  - It is used to assign the value to the variable as well as return the value.
