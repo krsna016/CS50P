@@ -44,11 +44,7 @@ To explore my solutions and projects:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/CS50P.git
-    ```
-2. Navigate to the specific week's directory:
-    ```sh
-    cd CS50P/week-x
+    git clone https://github.com/krsna016/CS50P.git
     ```
 3. Run the Python scripts or explore the notes and assignments.
 
